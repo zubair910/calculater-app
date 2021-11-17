@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+              <div>
+                  <h1>Hello World...</h1> 
+            </div>
+              
+        <section class="bigbox">
+            <h2>My Calculater App</h2>
+            <h3>A Simple Calculater</h2>
+            <div class="smallbox"></div>
+
+            <div>
+                   <input type="text"  id="input1"  placeholder="Enter value">
+            </div>
+
+            <div>
+                <table border="1">
+                    <tr>
+                         <td onclick="allClear()">Ac</td>
+                         <td onclick="clear1()">c</td>
+                         <td onclick="setValue('/')">/</td>
+                         <td onclick="setValue('%')">%</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setValue(9)">9</td>
+                         <td onclick="setValue(8)">8</td>
+                         <td onclick="setValue(7)">7</td>
+                         <td onclick="setValue('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setValue(6)">6</td>
+                        <td onclick="setValue(5)">5</td>
+                        <td onclick="setValue(4)">4</td>
+                        <td onclick="setValue('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setValue(3)">3</td>
+                        <td onclick="setValue(2)">2</td>
+                        <td onclick="setValue(1)">1</td>
+                        <td onclick="setValue('*')">*</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setValue(0)">0</td>
+                        <td onclick="setValue('.')">.</td>
+                        <td colspan="2" onclick="results()">=</td>
+
+                        
+                    </tr>
+                </table>
+            </div>
+        </section>
+</body>
+<script src="app.js"></script>
+</html>
